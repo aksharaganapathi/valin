@@ -1,0 +1,2 @@
+$(".title").hide();
+$(".title").slideDown();
