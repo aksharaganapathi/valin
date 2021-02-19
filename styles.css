@@ -66,5 +66,6 @@ i {
 }
 
 a {
+  display: inline;
   color: white;
 }
