@@ -65,13 +65,6 @@ i {
   font-size: 45px;
 }
 
-i:hover {
-  color: rgba(96, 146, 123, 1.0);
-  color: -webkit-linear-gradient(top left, rgba(96, 146, 123, 1.0), rgba(91, 146, 221, 1.0));
-  color: -moz-linear-gradient(top left, rgba(96, 146, 123, 1.0), rgba(91, 146, 221, 1.0));
-  color: linear-gradient(to bottom right, rgba(96, 146, 123, 1.0), rgba(91, 146, 221, 1.0));
-}
-
 a {
-  display: block;
+  color: white;
 }
