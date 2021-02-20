@@ -1,0 +1,52 @@
+body {
+  background: rgba(96, 146, 123, 1.0);
+  background: -webkit-linear-gradient(top left, rgba(96, 146, 123, 1.0), rgba(91, 146, 221, 1.0));
+  background: -moz-linear-gradient(top left, rgba(96, 146, 123, 1.0), rgba(91, 146, 221, 1.0));
+  background: linear-gradient(to bottom right, rgba(96, 146, 123, 1.0), rgba(91, 146, 221, 1.0));
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+  font-family: Montserrat;
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+.header {
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.container{
+  margin-top: 3rem;
+  background: white;
+  border-radius: 1rem;
+}
+
+.first{
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.custom-select{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form{
+  margin: auto;
+  padding: 2rem;
+}
+
+textarea {
+    resize: none;
+    height: 50px;
+}
+
+footer{
+  margin: 20px;
+  color: white;
+}

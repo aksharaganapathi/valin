@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico?v=1.1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="converter.css">
+  <title>valin</title>
+</head>
+
+<body>
+
+  <!-- nav -->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#"> <img class="logo" src="default.png" alt="logo"> </a>
+  </nav>
+
+  <!-- converter -->
+  <form class="" action="/" method="post">
+    <div class="container">
+      <div class="row first">
+        <div class="col-12">
+          <h1>Convert From</h1>
+
+          <select class="custom-select firstDrop" name="firstInput">
+            <option value = "Currency" selected>Currency</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="CAD">Canadian Dollar (CAD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Pound Sterling (GBP)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="KRW">South Korean Won (KRW)</option>
+            <option value="USD">US Dollar (USD)</option>
+            <option value="CNY">Renminbi (CNY)</option>
+            <option value="HKD">Hong Kong Dollar (HKD)</option>
+            <option value="CHF">Swiss Franc (CHF)</option>
+            <option value="NZD">New Zealand Dollar (NZD)</option>
+            <option value="SEK">Swedish Krona (SEK)</option>
+            <option value="INR">Indian Rupee (INR)</option>
+            <option value="MXN">Mexican Peso (MXN)</option>
+            <option value="RUB">Russian Ruble (RUB)</option>
+            <option value="ZAR">South African Rand (ZAR)</option>
+          </select>
+
+          <h1>Convert To</h1>
+
+          <select class="custom-select secondDrop" name="secondInput">
+            <option value="Currency" selected>Currency</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="CAD">Canadian Dollar (CAD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Pound Sterling (GBP)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="KRW">South Korean Won (KRW)</option>
+            <option value="USD">US Dollar (USD)</option>
+            <option value="CNY">Renminbi (CNY)</option>
+            <option value="HKD">Hong Kong Dollar (HKD)</option>
+            <option value="CHF">Swiss Franc (CHF)</option>
+            <option value="NZD">New Zealand Dollar (NZD)</option>
+            <option value="SEK">Swedish Krona (SEK)</option>
+            <option value="INR">Indian Rupee (INR)</option>
+            <option value="MXN">Mexican Peso (MXN)</option>
+            <option value="RUB">Russian Ruble (RUB)</option>
+            <option value="ZAR">South African Rand (ZAR)</option>
+          </select>
+
+        </div>
+
+        <div class="col-12 form">
+            <div class="form-group">
+              <input type="text" name="input" value="" class="form-control input" placeholder="Input your value here" name="input" autocomplete="off">
+            </div>
+
+            <div class="form-group">
+              <button type="submit" name="button" class="btn btn-secondary form-control submit">Convert!</button>
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" name="name" rows="1" cols="80" readonly> <%= input %> <%= currency %> <%= equal %> <%= final %> <%= secondCurrency %> </textarea>
+            </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <footer>© axiboi <%= year %>/All Rights Reserved</footer>
+
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="converter.js" charset="utf-8"></script>
+</body>
+
+</html>
