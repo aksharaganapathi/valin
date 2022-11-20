@@ -8,4 +8,4 @@ It's built with HTML, CSS, JavaScript, ExpressJS for backend requests, and EJS f
 
 
 # Where can I see it?
-Visit the project at https://valin.netlify.app/
+Visit the project at https://aksharaganapathi.github.io/valin/
