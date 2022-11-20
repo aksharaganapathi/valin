@@ -38,21 +38,23 @@ app.post("/", function(req, res) {
   let firstCurrency = req.body.firstInput;
   let secondCurrency = req.body.secondInput;
   let combine = firstCurrency + "_" + secondCurrency;
-  let url = "https://free.currconv.com/api/v7/convert?q=" + combine + "&apiKey=e0b6d91633dbb20e5a7f";
+  let url = "https://free.currconv.com/api/v7/convert?q=" + combine + "&apiKey=7da432c8c2149df20638";
   let input = req.body.input;
 
   https.get(url, function(response) {
+    console.log(response.statusCode);
+    if(response.statusCode > 299 || response.statusCode < 200)
+      {
+          res.render("error", {year: currentYear});
+          return;
+      }
 
     response.on("data", function(data) {
       const currencyData = JSON.parse(data);
-      console.log("Currency Data: ");
-      console.log(currencyData);
       const exchangeRate = currencyData.results[combine].val;
       let convertedValue = input * exchangeRate;
       let roundedValue = convertedValue.toFixed(2);
-
       res.render("list", {final: roundedValue, currency: firstCurrency, secondCurrency: secondCurrency, input: input, equal: "is equal to", error: false, year: currentYear});
-
     });
   });
 });

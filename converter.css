@@ -3,7 +3,6 @@ body {
   background: -webkit-linear-gradient(top left, rgba(96, 146, 123, 1.0), rgba(91, 146, 221, 1.0));
   background: -moz-linear-gradient(top left, rgba(96, 146, 123, 1.0), rgba(91, 146, 221, 1.0));
   background: linear-gradient(to bottom right, rgba(96, 146, 123, 1.0), rgba(91, 146, 221, 1.0));
-  height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: black;
@@ -49,4 +48,14 @@ textarea {
 footer{
   margin: 20px;
   color: white;
+}
+
+#errDiv
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5rem auto;
+  color: white;
+  width: 75%;
 }
