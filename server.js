@@ -38,7 +38,7 @@ app.post("/", function(req, res) {
   let firstCurrency = req.body.firstInput;
   let secondCurrency = req.body.secondInput;
   let combine = firstCurrency + "_" + secondCurrency;
-  let url = "https://free.currconv.com/api/v7/convert?q=" + combine + "&apiKey=";
+  let url = "https://free.currconv.com/api/v7/convert?q=" + combine + "&apiKey=7da432c8c2149df20638";
   let input = req.body.input;
 
   https.get(url, function(response) {
